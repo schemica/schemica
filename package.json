@@ -1,0 +1,51 @@
+{
+  "name": "schemica",
+  "version": "0.0.1",
+  "description": "Inspect and diff API and MCP server schemas. Detect breaking changes before your agents adapt to them.",
+  "keywords": [
+    "mcp",
+    "openapi",
+    "schema",
+    "schema-diff",
+    "breaking-changes",
+    "api-monitoring",
+    "model-context-protocol"
+  ],
+  "homepage": "https://schemica.dev",
+  "bugs": {
+    "url": "https://github.com/schemica/schemica/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schemica/schemica.git"
+  },
+  "license": "MIT",
+  "author": "Schemica <hello@schemica.dev> (https://schemica.dev)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "schemica": "./src/cli.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "typescript": "^7.0.2"
+  }
+}
